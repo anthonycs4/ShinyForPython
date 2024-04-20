@@ -7,7 +7,7 @@ import seaborn as sns
 titanic_df = sns.load_dataset('titanic')
 
 # Establecer las opciones de la página
-ui.page_opts(title="Multi-column example")
+#ui.page_opts(title="Multi-column example")
 
 # Menú desplegable para seleccionar una variable del Titanic
 ui.input_select("var", "Select variable", choices=titanic_df.columns.tolist())

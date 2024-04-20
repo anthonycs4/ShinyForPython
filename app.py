@@ -41,6 +41,11 @@ with ui.layout_columns():
         p = px.histogram(titanic_df, x=input.var2())
         p.update_layout(height=200, xaxis_title=None)
         return p
+city_centers = {
+    "Cherbourg": (49.6500, -1.6500),
+    "Londres": (51.5074, -0.1278),
+    "Southampton": (50.9000, -1.4000)
+}
 
 # Menú desplegable para seleccionar un centro de mapa
 ui.input_select("center", "Center", choices=list(city_centers.keys()))

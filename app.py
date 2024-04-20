@@ -3,6 +3,8 @@ from shiny.express import input, render, ui
 from shinywidgets import render_plotly
 import seaborn as sns
 import ipyleaflet as ipyl
+from shinywidgets import render_widget
+
 
 # Cargar el conjunto de datos Titanic
 titanic_df = sns.load_dataset('titanic')
